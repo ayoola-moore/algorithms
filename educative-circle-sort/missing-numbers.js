@@ -1,3 +1,4 @@
+/* the alternate approach to for... while loop was used below
 for (let i = 0; i < nums.length; i++) {
 	let el = nums[i];
 	while (el !== i + 1) {
@@ -5,6 +6,7 @@ for (let i = 0; i < nums.length; i++) {
 		el = nums[i]
 	}
 }
+*/
 
 function findMissingNumbers(nums) {
 	let i = 0;
@@ -18,11 +20,9 @@ function findMissingNumbers(nums) {
 		}
 	}
 
-	// nums.sort((a, b)=>a-b) //and combination of set
+	// nums.sort((a, b)=>a-b) //and combination of set wouldn't work
 
 	missingNumbers = [];
-
-	console.log(nums)
 
 	for (i = 0; i < nums.length; i++) {
 		if (nums[i] !== i + 1) {
